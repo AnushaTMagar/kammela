@@ -10,12 +10,12 @@ const rotatingWords = [
   'Educators',
 ]
 
-const stats = [
-  { num: '10K+',  label: 'App Downloads' },
-  { num: '500+',  label: 'Professionals' },
-  { num: '50+',   label: 'Service Categories' },
-  { num: '0',     label: 'Fraud Tolerance' },
-]
+// const stats = [
+//   { num: '10K+',  label: 'App Downloads' },
+//   { num: '500+',  label: 'Professionals' },
+//   { num: '50+',   label: 'Service Categories' },
+//   { num: '0',     label: 'Fraud Tolerance' },
+// ]
 
 export default function Hero() {
   const [index, setIndex] = useState(0)
@@ -125,13 +125,13 @@ export default function Hero() {
             <Download size={18} />
             Download App
           </a>
-          <a
+          {/* <a
             href="https://kammela.com/sign-up"
             className="btn-outline text-base"
           >
             <UserPlus size={18} />
             Sign Up Free
-          </a>
+          </a> */}
         </div>
 
         {/* Stats */}
@@ -139,7 +139,7 @@ export default function Hero() {
           className="grid grid-cols-2 sm:grid-cols-4 gap-x-10 gap-y-8 animate-fade-up"
           style={{ animationDelay: '360ms' }}
         >
-          {stats.map((s, i) => (
+          {/* {stats.map((s, i) => (
             <div key={i} className="flex flex-col gap-1">
               <span className="text-4xl md:text-5xl font-black text-primary dark:text-primary-300 leading-none">
                 {s.num}
@@ -148,7 +148,7 @@ export default function Hero() {
                 {s.label}
               </span>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
 
