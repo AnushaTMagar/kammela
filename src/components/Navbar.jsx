@@ -67,7 +67,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
 
           {/* Sign Up CTA — desktop */}
           <a
-            href="https://kammela.com/sign-up"
+            href="https://onelink.to/cpnd73"
             className="hidden md:inline-flex items-center gap-2 bg-primary hover:bg-primary-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition-all duration-200 hover:scale-[1.03]"
           >
             Sign Up Free
@@ -98,7 +98,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
             </a>
           ))}
           <a
-            href="https://kammela.com/sign-up"
+            href="https://onelink.to/cpnd73"
             className="mt-2 inline-flex justify-center items-center bg-primary text-white font-semibold px-5 py-2.5 rounded-lg text-sm"
           >
             Sign Up Free

@@ -1,4 +1,7 @@
-import { Facebook, Linkedin, Download } from 'lucide-react'
+import { useState } from 'react'
+import PrivacyPolicy from './PrivacyPolicy'
+import { Facebook, Linkedin,Instagram, Download, Youtube } from 'lucide-react'
+
 
 const navLinks = [
   { label: 'About',        href: '#about' },
@@ -7,16 +10,21 @@ const navLinks = [
   { label: 'Contact',      href: '#contact' },
 ]
 
+
 const legalLinks = [
-  { label: 'Privacy Policy', href: 'https://kammela.com/privacy-policy' },
+  // { label: 'Privacy Policy', href: 'https://kammela.com/privacy-policy' }
+  { label: 'Privacy Policy', component: 'PrivacyPolicy' }
 ]
 
 const socials = [
   { icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61572287257901' },
+  { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/kammela_nepal' },
   { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/company/kammela' },
+  { icon: Youtube, label: 'Youtube', href: 'https://www.youtube.com/@kammela-nepal' },
 ]
 
 export default function Footer() {
+  const [showPrivacy, setShowPrivacy] = useState(false)
   return (
     <footer className="bg-white dark:bg-[#0a0a0a] border-t border-gray-100 dark:border-[#1a1a1a]">
       <div className="section-container py-16">
@@ -99,7 +107,7 @@ export default function Footer() {
             © 2026 KamMela · Mangawa Nepal Pvt. Ltd. · Ward No. 6, Mahangkal, Kathmandu
           </p>
           <div className="flex gap-4">
-            {legalLinks.map(link => (
+            {/* {legalLinks.map(link => (
               <a
                 key={link.label}
                 href={link.href}
@@ -107,10 +115,37 @@ export default function Footer() {
               >
                 {link.label}
               </a>
+            ))} */}
+            {legalLinks.map(link => (
+              <button
+                key={link.label}
+                onClick={() => link.component === 'PrivacyPolicy' && setShowPrivacy(true)}
+                className="text-xs text-gray-400 dark:text-gray-600 hover:text-primary dark:hover:text-primary-300 transition-colors"
+              >
+                {link.label}
+              </button>
             ))}
           </div>
         </div>
       </div>
+      {/* Render Privacy Policy when clicked */}
+      {showPrivacy && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-center items-start pt-20">
+          <div className="bg-white dark:bg-[#0a0a0a] rounded-lg shadow-lg max-w-3xl w-full mx-4 p-6 relative
+                          max-h-[80vh] overflow-y-auto">
+            {/* Close button */}
+            <button
+              className="absolute top-4 right-4 text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary-300"
+              onClick={() => setShowPrivacy(false)}
+            >
+              ✕
+            </button>
+
+            {/* Privacy Policy Content */}
+            <PrivacyPolicy />
+          </div>
+        </div>
+      )}
     </footer>
   )
 }
