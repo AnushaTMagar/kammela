@@ -68,6 +68,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
           {/* Sign Up CTA — desktop */}
           <a
             href="https://onelink.to/cpnd73"
+            target="_blank"
             className="hidden md:inline-flex items-center gap-2 bg-primary hover:bg-primary-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition-all duration-200 hover:scale-[1.03]"
           >
             Sign Up Free

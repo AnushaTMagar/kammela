@@ -125,13 +125,14 @@ export default function Hero() {
             <Download size={18} />
             Download App
           </a>
-          {/* <a
-            href="https://kammela.com/sign-up"
+          <a
+            href="https://onelink.to/cpnd73"
+            target="_blank"
             className="btn-outline text-base"
           >
             <UserPlus size={18} />
             Sign Up Free
-          </a> */}
+          </a>
         </div>
 
         {/* Stats */}

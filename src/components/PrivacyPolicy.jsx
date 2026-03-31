@@ -29,14 +29,14 @@ export default function PrivacyPolicy() {
         </p>
 
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-6 mb-2">
-          How do we collect the data?
+          How we collect the data?
         </h3>
         <p className="text-gray-700 dark:text-gray-400 mb-4">
           Most data is provided directly during registration. Some data may come from Google surveys or marketing agencies with your consent.
         </p>
 
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-6 mb-2">
-          What do we do with the information?
+          What we do with the information?
         </h3>
         <p className="text-gray-700 dark:text-gray-400 mb-4">
           We use the information to assess your suitability, enable services, or as required by law. Data is not transferred outside Nepal unless necessary, and proper safeguards are used.
@@ -50,13 +50,14 @@ export default function PrivacyPolicy() {
         </p>
         <ul className="list-disc ml-5 mb-4 text-gray-700 dark:text-gray-400">
           <li>Iconsoft Technologies Pvt. Ltd. – Technology platform</li>
-          <li>Amazon Web Services (AWS) – Cloud storage and database</li>
+          <li>Amazon Web Services (AWS) – Cloud Storage and Database</li>
+          <li>Silver Lining Pvt Ltd Nepal – Server and Database</li>
           <li>Khalti Private Limited – Payment service</li>
           <li>Janaki Technology Pvt. Ltd (Sparrow) – OTP verification service</li>
         </ul>
 
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-6 mb-2">
-          How do we store the information?
+          How we store the information?
         </h3>
         <p className="text-gray-700 dark:text-gray-400 mb-4">
           Your information is securely stored with technical and organizational measures. Unauthorized access is restricted via passwords, email verification, and encryption.

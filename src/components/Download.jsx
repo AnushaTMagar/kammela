@@ -36,7 +36,7 @@ export default function Download() {
               {/* Store buttons */}
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="https://onelink.to/cpnd73"
+                  href="https://apps.apple.com/app/kammela/id6753652939"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 bg-black hover:bg-gray-900 text-white px-6 py-3.5 rounded-xl transition-all duration-200 hover:scale-[1.03]"
@@ -51,7 +51,7 @@ export default function Download() {
                 </a>
 
                 <a
-                  href="https://onelink.to/cpnd73"
+                  href="https://play.google.com/store/apps/details?id=com.iconsoft.kammela&pcampaignid=web_share"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 bg-black hover:bg-gray-900 text-white px-6 py-3.5 rounded-xl transition-all duration-200 hover:scale-[1.03]"
